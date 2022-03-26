@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Run",
+      "program": "${workspaceFolder:xcresulttool-file}/.build/debug/Run",
+      "args": [],
+      "cwd": "${workspaceFolder:xcresulttool-file}",
+      "preLaunchTask": "swift: Build Debug Run"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Run",
+      "program": "${workspaceFolder:xcresulttool-file}/.build/release/Run",
+      "args": [],
+      "cwd": "${workspaceFolder:xcresulttool-file}",
+      "preLaunchTask": "swift: Build Release Run"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Test xcresulttool-file",
+      "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+      "args": [".build/debug/xcresulttool-filePackageTests.xctest"],
+      "cwd": "${workspaceFolder:xcresulttool-file}",
+      "preLaunchTask": "swift: Build All"
+    }
+  ]
+}

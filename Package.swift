@@ -7,7 +7,7 @@ let package = Package(
         .macOS(.v10_15)
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.61.0"),
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.62.0"),
     ],
     targets: [
         .target(
